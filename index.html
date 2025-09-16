@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos e Notícias</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" />
+    </div>
+    <div class="user" id="user-container">
+      <button id="login-btn">Login</button>
+    </div>
+  </nav>
+
+  <!-- Carrossel de Notícias -->
+  <div class="carousel" id="carousel">
+    <div class="carousel-item">
+      <img src="images/hollow_knight.jpg" alt="Hollow Knight">
+      <p>Notícia sobre Hollow Knight.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/silksong.jpg" alt="Silksong">
+      <p>Notícia sobre Silksong.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/bioshock.jpg" alt="BioShock">
+      <p>Notícia sobre BioShock.</p>
+    </div>
+  </div>
+
+  <!-- Login Form (Hidden) -->
+  <div id="login-form" class="login-form">
+    <h2>Entre com seu nome</h2>
+    <input type="text" id="username" placeholder="Seu nome" required />
+    <button id="submit-login">Entrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
